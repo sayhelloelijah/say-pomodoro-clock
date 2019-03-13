@@ -3,8 +3,6 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 The technique has been widely popularized by dozens of apps and websites providing timers and instructions. Closely related to concepts such as timeboxing and iterative and incremental development used in software design, the method has been adopted in pair programming contexts.
 
-Info taken from [Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)
-
 ## The Methodology
 There are six steps in the original technique:
 1. Decide on the task to be done.
@@ -19,3 +17,5 @@ The stages of planning, tracking, recording, processing and visualizing are fund
 For the purposes of the technique, a pomodoro is the interval of time spent working. After task completion, any time remaining in the Pomodoro is devoted to overlearning. Regular breaks are taken, aiding assimilation. A short (3–5 minutes) rest separates consecutive pomodoros. Four pomodoros form a set. A longer (15–30 minute) rest is taken between sets.
 
 A goal of the technique is to reduce the impact of internal and external interruptions on focus and flow. A pomodoro is indivisible; when interrupted during a pomodoro, either the other activity must be recorded and postponed (using the inform – negotiate – schedule – call back strategy) or the pomodoro must be abandoned.
+
+_Credit: [Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)_
