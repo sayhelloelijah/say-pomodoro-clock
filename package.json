@@ -1,0 +1,42 @@
+{
+  "name": "say-pomodoro-clock",
+  "version": "0.0.1",
+  "description": "Pomodoro clock PWA built with Vanilla Js",
+  "main": "./build/js/app.min.js",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.15.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "babel": "babel --presets env js/app.js -o build/app.min.js",
+    "test": "test",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayhelloelijah/say-pomodoro-clock.git"
+  },
+  "keywords": [
+    "pomodoro",
+    "clock",
+    "app",
+    "pwa",
+    "vanilla",
+    "javascript",
+    "javascript",
+    "vanilla",
+    "js",
+    "vanilla",
+    "js"
+  ],
+  "author": "@sayhelloelijah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sayhelloelijah/say-pomodoro-clock/issues"
+  },
+  "homepage": "https://github.com/sayhelloelijah/say-pomodoro-clock#readme"
+}
