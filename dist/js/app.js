@@ -123,16 +123,15 @@ class Timer {
 
     static getFutureTime(minutes) {
         const newDate = Date.now();
-        console.log(newDate);
-        this.futureTime = new Date(Date.now() - (60000 * minutes)); // 25 minutes from now
+        this.futureTime = Date.now() - (60000 * minutes); // 25 minutes from now
         return this.futureTime;
     }
 
     static getTimeRemaining(endtime) {
-        const time = new Date(endtime) + Date.parse(new Date());
+        const time = Date.parse(new Date()) - endtime;
         const seconds = Math.floor((time / 1000) % 60);
         const minutes = Math.floor((time / 1000 / 60) % 60);
-        console.log(`\nTime: ${time} \nSeconds: ${seconds} \nMinutes: ${minutes}`)
+        console.log(endtime, `\nTime: ${time} \nSeconds: ${seconds} \nMinutes: ${minutes}`)
         return {
             total: time,
             minutes,
