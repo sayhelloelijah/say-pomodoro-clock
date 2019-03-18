@@ -18,4 +18,6 @@ For the purposes of the technique, a pomodoro is the interval of time spent work
 
 A goal of the technique is to reduce the impact of internal and external interruptions on focus and flow. A pomodoro is indivisible; when interrupted during a pomodoro, either the other activity must be recorded and postponed (using the inform – negotiate – schedule – call back strategy) or the pomodoro must be abandoned.
 
-_Credit: [Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)_
+Credit: _[Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)_
+
+_[Code of Conduct](CODE_OF_CONDUCT.md)_
