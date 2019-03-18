@@ -1,21 +1,19 @@
 export default class Timer {
-
     static getCurrentTime() {
         this.currentTime = Date.now(); // get time in milliseconds
         return this.currentTime;
     }
 
     static getFutureTime(minutes) {
-        const newDate = Date.now();
-        this.futureTime = Date.now() - (60000 * minutes); // 25 minutes from now
+        this.futureTime = Timer.getCurrentTime() - (60000 * minutes); // 25 minutes from now
         return this.futureTime;
     }
 
     static getTimeRemaining(endtime) {
-        const time = Date.parse(new Date()) - endtime;
+        const time = Timer.getFutureTime(endtime);
         const seconds = Math.floor((time / 1000) % 60);
         const minutes = Math.floor((time / 1000 / 60) % 60);
-        console.log(endtime, `\nTime: ${time} \nSeconds: ${seconds} \nMinutes: ${minutes}`)
+        console.log(`End Time: ${endtime}\nTime: ${time}\nSeconds: ${seconds}\nMinutes: ${minutes}`);
         return {
             total: time,
             minutes,
@@ -32,6 +30,5 @@ export default class Timer {
         if (time.total <= 0) {
             clearInterval(this.timeInterval);
         }
-        // setInterval(Timer.initializeClock, 1000);
     }
 }
