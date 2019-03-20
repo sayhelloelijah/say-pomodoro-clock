@@ -19,6 +19,11 @@
             font: {
                 size: 5rem;
             }
+            margin: 0;
+        }
+
+        @at-root &-task {
+            margin: 0;
         }
     }
 
