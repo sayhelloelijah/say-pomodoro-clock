@@ -97,6 +97,7 @@
 
 const endAudio = document.querySelector('.pomodoro__audio--end');
 const tickAudio = document.querySelector('.pomodoro__audio--tick');
+const timerBorder = document.querySelector('.pomodoro__timer-circle');
 const breakContainer = document.querySelector('.pomodoro__break');
 const minusBreaks = document.querySelector('#minusBreaks');
 const addBreaks = document.querySelector('#addBreaks');
@@ -145,12 +146,15 @@ function time_remaining(endtime){
 function runClock(id, minutes) {
     var deadline = new Date(Date.parse(new Date()) + minutes*60*1000);
     var clock = document.querySelector(id);
+    const timerBorder = document.querySelector('.pomodoro__timer-circle');
+    timerBorder.style.animationDuration = `${minutes * 60}s`;
 
     function updateClock() {
         var t = time_remaining(deadline);
         var minutesSpan = clock.querySelector('.pomodoro__minutes');
         var secondsSpan = clock.querySelector('.pomodoro__seconds');
         tickAudio.volume = 0.25;
+
         if (!tickAudio) return;
         tickAudio.currentTime = 0;
         minutesSpan.innerHTML = (`0${t.minutes}`).slice(-2);
@@ -181,8 +185,10 @@ startButton.addEventListener('click', (e) => {
     hideElement(breakContainer);
 
     e.preventDefault(); e.stopPropagation();
+    timerBorder.classList.add('pomodoro__timer-circle--play');
     runClock('.pomodoro', 25);
 });
+
 
 /***/ })
 

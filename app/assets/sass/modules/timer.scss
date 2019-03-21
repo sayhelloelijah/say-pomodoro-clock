@@ -6,14 +6,37 @@
 
     @at-root &__timer {
         align-items: center;
-        border: 10px solid $secondary-color;
-        border-radius: 50%;
         display: flex;
         flex-direction: column;
         height: 300px;
         justify-content: center;
+        position: relative;
         margin-bottom: 30px;
         width: 300px;
+
+        @at-root &-svg {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+        @at-root &-circle {
+            stroke-dasharray: 990px;
+            stroke-dashoffset: 0px;
+            stroke-linecap: round;
+            cx: 50%;
+            cy: 50%;
+            fill: transparent;
+            height: 100%;
+            r: 140px;
+            stroke: #fff;
+            stroke-width: 5px;
+            width: 100%;
+
+            @at-root &--play {
+                animation: countdown linear infinite forwards;
+            }
+        }
 
         @at-root &-time {
             font: {
@@ -75,6 +98,7 @@
 
         @at-root &-button {
             align-items: center;
+            background-color: transparent;
             border: 2px solid $secondary-color;
             border-radius: 5px;
             color: $secondary-color;
@@ -103,5 +127,14 @@
             font-size: 3rem;
             margin-right: 5px;
         }
+    }
+}
+
+@keyframes countdown {
+    0% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 990px;
     }
 }
