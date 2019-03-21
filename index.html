@@ -9,19 +9,21 @@
     <meta name="msapplication-navbutton-color" content="#C31B1B" />
     <title>sayPomodoro Clock</title>
     <link rel="stylesheet" href="./dist/css/app.css" />
-
 </head>
 <body>
     <div class="pomodoro">
         <div class="pomodoro__timer">
+            <svg class="pomodoro__timer-svg">
+                <circle class="pomodoro__timer-circle"></circle>
+            </svg>
             <h1 class="pomodoro__timer-time"><span class="pomodoro__minutes">25</span>:<span class="pomodoro__seconds">00</span></h1>
             <h2 class="pomodoro__timer-task">Time</h2>
         </div>
-        <a href="#" class="pomodoro__button-primary">Start</a>
+        <button href="#" class="pomodoro__button-primary">Start</button>
         <div class="pomodoro__break">
-            <a href="#" class="pomodoro__break-button" id="addBreaks">+</a>
+            <button href="#" class="pomodoro__break-button" id="minusBreaks">-</button>
             <span class="pomodoro__break-counter"><span class="pomodoro__break-number">5</span>breaks</span>
-            <a href="#" class="pomodoro__break-button" id="minusBreaks">-</a>
+            <button href="#" class="pomodoro__break-button" id="addBreaks">+</button>
         </div>
     </div>
     <audio src="http://codingtutorials360.com/14244764.mp3" class="pomodoro__audio pomodoro__audio--end" type="audio/mpeg"></audio>
