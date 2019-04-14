@@ -6,6 +6,7 @@
 
     @at-root &__heading {
         font-size: 1.25em;
+        font-weight: 600;
         margin-bottom: 10px;
     }
 
@@ -72,6 +73,7 @@
             //box-shadow: 2px 2px 6px darken($primary-color, 5%), -2px -2px 6px darken($primary-color, 5%), -2px 2px 6px darken($primary-color, 5%), 2px -2px 6px darken($primary-color, 5%);
             color: $primary-color;
             font: {
+                family: $primary-font;
                 size: 1.5rem;
                 weight: 600;
             }
@@ -79,7 +81,7 @@
             padding: 10px 30px;
             transition: .1s all ease-in-out;
 
-            &:active {
+            &:hover  {
                 box-shadow: inset 3px -3px 4px darken($secondary-color, 70%), inset 0px 3px 3px darken($secondary-color, 70%);
                 font: {
                     size: 1.4em;
