@@ -140,7 +140,7 @@ function runClock(id, minutes) {
         const t = timeRemaining(deadline);
         const minutesSpan = clock.querySelector('.pomodoro__minutes');
         const secondsSpan = clock.querySelector('.pomodoro__seconds');
-        tickAudio.volume = 0.25;
+        tickAudio.volume = 0.1;
 
         if (!tickAudio) return;
         tickAudio.currentTime = 0;
@@ -191,10 +191,6 @@ addBreaks.addEventListener('click', (e) => {
     number += 1;
     breakNum.innerText = number;
     return true;
-});
-
-soundButton.addEventListener('click', (e) => {
-	tickAudio.volume = 0;
 });
 
 
