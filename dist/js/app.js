@@ -146,7 +146,7 @@ function runClock(id, minutes) {
         tickAudio.currentTime = 0;
         minutesSpan.innerHTML = (`0${t.minutes}`).slice(-2);
         secondsSpan.innerHTML = (`0${t.seconds}`).slice(-2);
-        tickAudio.play();
+//        tickAudio.play();
         if (t.total <= 0) {
             clearInterval(timeinterval);
             endAudio.play();
