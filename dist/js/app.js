@@ -103,6 +103,7 @@ const minusBreaks = document.querySelector('#minusBreaks');
 const addBreaks = document.querySelector('#addBreaks');
 const breakNum = document.querySelector('.pomodoro__break-number');
 const startButton = document.querySelector('.pomodoro__button-primary');
+const soundButton = document.querySelector('#soundToggle');
 
 let count = 0;
 let number = parseInt(breakNum.innerText, 10);
@@ -190,6 +191,10 @@ addBreaks.addEventListener('click', (e) => {
     number += 1;
     breakNum.innerText = number;
     return true;
+});
+
+soundButton.addEventListener('click', (e) => {
+	tickAudio.volume = 0;
 });
 
 
