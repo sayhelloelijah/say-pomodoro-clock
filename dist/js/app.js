@@ -193,6 +193,10 @@ addBreaks.addEventListener('click', (e) => {
     return true;
 });
 
+soundButton.addEventListener('click', (e) => {
+	tickAudio.volume = 0;
+});
+
 
 /***/ })
 
